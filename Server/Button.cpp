@@ -13,8 +13,8 @@
 Button::Button(byte attachTo, byte buttonMode) {
   pin = attachTo;
   //setDebounceTime(50);
-
   pinMode(attachTo, buttonMode);
+  //digitalWrite(attachTo, 1);
   //if ((pin == 0) || (pin == 2) || (pin == 4) || (pin == 15) || (pin == 12) || (pin == 13) || (pin == 14) || (pin == 27) || (pin == 33) || (pin == 32)) {
   /*if ( (pin == 32)) {
     capa = touchRead(pin);
